@@ -1,0 +1,309 @@
+*
+{
+    margin: none;
+    box-sizing: border-box;
+}
+img,i
+{
+    cursor: pointer;
+}
+i
+{
+    color: black;
+    border-color: black;
+}
+a
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 3px 15%;
+    background-color: white;
+    border-bottom: 1px solid rgba(219,219,219,1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.logo 
+{
+    height: 29px;
+}
+.logo img
+{
+    height: 100%;
+    object-fit: contain;
+}
+header .searchbox
+{
+    width: 268px;
+    height: 36px;
+    background-color: rgba(239,239,239,1);
+    padding: 3px 16px;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+header .searchbox input
+{
+    width: 236px;
+    height: 25px;
+    background-color: rgba(239,239,239,1);
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 15px;
+    color: #8e8e8e;
+}
+header nav ul
+{
+    display: flex;
+}
+header nav ul li
+{
+    margin-right: 20px;
+    width: 22px;
+    height: 22px;
+}
+section
+{
+    padding: 3px 15%;
+    display: flex;
+}
+.left
+{
+    width: 65%;
+}
+.story
+{
+    width: 470px;
+    height: 119px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 16px;
+    border: 1px solid rgba(219,219,219,1);
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.story .stories a img
+{
+    border-radius: 50%;
+    border: 2px solid #c62d8f;
+    padding: 1px;
+    object-fit: cover;
+}
+.story .stories p
+{
+    padding: 0px 2px;
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: black;
+}
+.post
+{
+    border: 1px solid rgba(219,219,219,1);
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 470px;
+    height: 100%;
+}
+.post .post-title
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 470px;
+    height: 58px;
+    padding:16px;
+}
+.post .post-title .post-left
+{
+    display: flex;
+    align-items: center;
+}
+.post .post-title .post-left .profile-pic img
+{
+    border-radius: 50%;
+}
+.post .post-title .post-left .details
+{
+    padding-left: 10px;
+    font-weight: 600;
+}
+.post .post-title .post-left .details span
+{
+    font-weight: normal;
+}
+.post .post-content img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.post .post-footer
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+.post .post-footer .like-share-comment i
+{
+    width: 24px;
+    height: 24px;
+}
+.post .post-footer-contents
+{
+    margin-top: 0;
+    padding: 0px 12px;
+}
+.post .post-footer-contents .name
+{
+    font-weight: 600;
+}
+.post .post-footer-contents .name span
+{
+    margin-left: 10px;
+    font-weight: normal;
+}
+.post .post-footer-contents .comments
+{
+    color: #8e8e8e;
+}
+.post .post-footer-contents .posting-time
+{
+    font-size: 14px;
+    color: #8e8e8e;
+}
+.post .add-comment
+{
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post .add-comment .left-side 
+{
+    display: flex;
+    align-items: center;
+}
+.post .add-comment .left-side i
+{
+    font-size: 22px;
+    margin-right: 10px;
+}
+.post .add-comment .left-side input
+{
+    border: none;
+    outline: none;
+    color: #8e8e8e;
+}
+.name,.likes,.post,.right-side p
+{
+    color: #000;
+}
+.right
+{
+    width: 35%;
+    margin-top: 35px;
+    position: fixed;
+    right: 110px;
+}
+.right .profile-title
+{
+    display: flex;
+    align-items: center;
+} 
+.right .profile-title .profile-left
+{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+.right .profile-title .profile-left .user img
+{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.right .profile-title .profile-left .details p
+{
+    font-weight: 600;
+}
+.right .profile-title .profile-left .details p span
+{
+    font-weight: normal;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #8e8e8e;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.right .profile-title .profile-right p
+{
+    font-size: 12px;
+    color: #0095f6;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.suggestions
+{
+    display: flex;
+    margin-top: 0;
+}
+.suggestions .sfy
+{
+    margin-right: 134px;
+    color: #8e8e8e;
+    margin-top: 0;
+}
+.suggestions .sa
+{
+    color: #000;
+    font-size: 12px;
+    margin-top: 0;
+}
+.suggestion-title
+{
+    display: flex;
+    align-items: center;
+}
+.suggestion-title .suggestion-left
+{
+    display: flex;
+    align-items: center;
+    margin-right: 115px;
+}
+.suggestion-title .suggestion-left .profile-pic img
+{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.suggestion-title .suggestion-left .details .name 
+{
+    font-weight: 600;
+}
+.suggestion-title .suggestion-left .details p
+{
+    color: #000;
+}
+.suggestion-title .suggestion-left .details .name span
+{
+    font-weight: normal;
+    color: #8e8e8e;
+}
+.suggestion-title .suggestion-right p
+{
+    font-size: 12px;
+    color: #0095f6;
+}
